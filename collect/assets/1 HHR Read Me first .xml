@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head><!-- ODK Aggregate upload time: 2014-04-21T08:00:19.803+0000 on https://hishandsreader.surveycto.com -->
+    <h:title>1) HHR - Read Me first!</h:title>
+    <model>
+      <itext>
+        <translation default="true()" lang="default">
+          <text id="/HHR_ReadMeFirst_03/videoprimers:label">
+            <value form="image">jr://images/genesis1_1.jpg</value>
+            <value form="video">jr://video/genesis1_1.3gp</value>
+            <value>Here is an example of an HHR video reading primer</value>
+          </text>
+          <text id="/HHR_ReadMeFirst_03/instructions2:label">
+            <value form="image">jr://images/dsc08768_800x600.jpg</value>
+            <value>Add your native hand signs (part 1):</value>
+          </text>
+          <text id="/HHR_ReadMeFirst_03/instructions3:label">
+            <value form="image">jr://images/hhr_afghansign_showcrop.jpg</value>
+            <value>Add your hand signs part 2:</value>
+          </text>
+          <text id="/HHR_ReadMeFirst_03/thegoal:label">
+            <value form="image">jr://images/languageworldmap.jpg</value>
+            <value>The goal of His Hands Reader is to help every person learn to read the language they want or need to learn to connect with the world around them.</value>
+          </text>
+          <text id="/HHR_ReadMeFirst_03/videodictionary:label">
+            <value form="image">jr://images/accept__across.jpg</value>
+            <value form="video">jr://video/accept__across.3gp</value>
+            <value>Here is an example of a HHR video dictionary</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <HHR_ReadMeFirst_03 id="HHR_ReadMeFirst_03">
+          <thankyou/>
+          <thegoal/>
+          <videodictionary/>
+          <videoprimers/>
+          <instructions0/>
+          <instructions1/>
+          <instructions2/>
+          <instructions3/>
+          <instructions4/>
+          <multipleforms/>
+          <startedlanguage/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </HHR_ReadMeFirst_03>
+      </instance>
+      <bind nodeset="/HHR_ReadMeFirst_03/thankyou" readonly="true()" type="string"/>
+      <bind nodeset="/HHR_ReadMeFirst_03/thegoal" readonly="true()" type="string"/>
+      <bind nodeset="/HHR_ReadMeFirst_03/videodictionary" readonly="true()" type="string"/>
+      <bind nodeset="/HHR_ReadMeFirst_03/videoprimers" readonly="true()" type="string"/>
+      <bind nodeset="/HHR_ReadMeFirst_03/instructions0" readonly="true()" type="string"/>
+      <bind nodeset="/HHR_ReadMeFirst_03/instructions1" readonly="true()" type="string"/>
+      <bind nodeset="/HHR_ReadMeFirst_03/instructions2" readonly="true()" type="string"/>
+      <bind nodeset="/HHR_ReadMeFirst_03/instructions3" readonly="true()" type="string"/>
+      <bind nodeset="/HHR_ReadMeFirst_03/instructions4" readonly="true()" type="string"/>
+      <bind nodeset="/HHR_ReadMeFirst_03/multipleforms" readonly="true()" type="string"/>
+      <bind nodeset="/HHR_ReadMeFirst_03/startedlanguage" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/HHR_ReadMeFirst_03/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/HHR_ReadMeFirst_03/thankyou">
+      <label>Welcome to the new His Hands Reader Android app: Now you can volunteer to add your text/voice OR hand sign for your native language to the His Hands Reader using these Android applications on your smart phone, pad or tablet!</label>
+      <hint>The His Hands Reader (HHR) video dictionary and reading primer help deaf and hearing persons learn to read English and their local business and native languages. Please volunteer to add your language Or hand signs to HHR to help your own people with literacy. The next few pages are examples of HHR videos. Please see www.HisHandsReader.org for more information.</hint>
+    </input>
+    <input ref="/HHR_ReadMeFirst_03/thegoal">
+      <label ref="jr:itext('/HHR_ReadMeFirst_03/thegoal:label')"/>
+      <hint>With your volunteer help, His Hands Reader dictionary and reading primer videos can reach your languages no matter how few people speak or sign it.</hint>
+    </input>
+    <input ref="/HHR_ReadMeFirst_03/videodictionary">
+      <label ref="jr:itext('/HHR_ReadMeFirst_03/videodictionary:label')"/>
+      <hint>Each HHR video dictionary contains 1742 words using hand signs, English, the local business and a native language.</hint>
+    </input>
+    <input ref="/HHR_ReadMeFirst_03/videoprimers">
+      <label ref="jr:itext('/HHR_ReadMeFirst_03/videoprimers:label')"/>
+      <hint>HHR video reading primers use Genesis text from the Easy English text of the Easy English Bible compliments of Wycliffe Associates U.K. This is a very simple translation of the Bible for people who are starting to learn English http://www.easyenglish.info/english-learners-bible Learning to read with the Easy English Bible will give mastery of 1200 common English words.</hint>
+    </input>
+    <input ref="/HHR_ReadMeFirst_03/instructions0">
+      <label>Add your native text to HHR</label>
+      <hint>It should take you about 15 to 25 hours to translate words for all 1742 words. Here are a few simple instructions:
+
+1) Choose the most simple common word that fits the lexicon meaning. We have provided a description of the word meaning, the part of speech (noun, verb, preposition, etc) and what the word means in a few other languages to help you know the exact meaning.
+
+2) If it takes two or more words to say the meaning in your language then separate the words by a &quot;_&quot;. For example in English &quot;ambulance&quot; is one word but in Russian it is two words... &quot;скорая_помощь&quot;
+
+3) Try not to have any leading or trailing spaces on the words as you type and do not use &quot;/&quot;. You can use &quot;-&quot; or ' if our word uses that symbol.
+
+4) You can save your changes in the form and continue where you left off, next time you open the form.
+
+5) See the next page for instructions on voice recording the translated words.</hint>
+    </input>
+    <input ref="/HHR_ReadMeFirst_03/instructions1">
+      <label>Add your native voice to HHR</label>
+      <hint>It should take you about 3 to 5 hours to record your voice for all 1742 words. Here are a few simple instructions:
+
+1) Choose a quiet place to record your voice.
+
+2) We recommend the Voice(s) to be male since this will better accommodate customs in some countries where the His Hands Reader will be used. 
+
+3) You can save your changes in the form and continue where you left off, next time you open the form.
+
+4) Test Audio - Please upload a test using the &quot;STARTED translation WORDS&quot; form before you begin the lexicon so I can make suggestions. 
+
+5) Please send me an email if you have any problems or when you have uploaded the 1742 word form.
+
+Thank you!
+Bob Achgill
+HHReader3@gmail.com</hint>
+    </input>
+    <input ref="/HHR_ReadMeFirst_03/instructions2">
+      <label ref="jr:itext('/HHR_ReadMeFirst_03/instructions2:label')"/>
+      <hint>Instructions to film hand signs for His Hands Reader
+Summary -
+It will take about 15-25 hours to video the hand signs for the 1742 words. If there is no hand sign for a word in the lexicon then just film 2 seconds with hands only resting in lap for that word to fill the place for that word.
+
+Video Location -
+For best quality we recommend using the photo tent and an HD quality android phone, pad or tablet to video your hand signs. If you can not use the photo tent then choose a location where you have good light that does not make shadows on your face and hands. You can video your hand signs outside on a sunny, not windy day. Or you can film inside if you have special sun like fluorescent lights (6,500K temperature). 
+
+Photo Tent Set Up -
+Place the photo tent on a piece of plastic or sheet so it will not get dirty if filming outside. Put the curtain rod through the loops in the back top corners and hang the black fabric over the rod. The Signer should sit with his back almost touching the black curtain. You can put a towel on the floor of the tent so the tent will not get dirty from the Signer's feet. It will be more comfortable for the Signer if he can sit on a cushion.
+
+Signers -
+It is good to have more than one Signer or break up the video sessions into blocks of 200-400 signs per day. This way the Signer will not look tired. We recommend Signers be male since this will better accommodate customs in some countries where the His Hands Reader will be used.</hint>
+    </input>
+    <input ref="/HHR_ReadMeFirst_03/instructions3">
+      <label ref="jr:itext('/HHR_ReadMeFirst_03/instructions3:label')"/>
+      <hint>Video Process -
+Place the Android video camera on a tripod about 20 centimeters from the tent. Make sure that the Signer is in the middle of your video frame. Do not zoom the camera as this will reduce quality of the video. Place the video camera close enough so the top of the video is 5 centimeters above the head of the Signer and 5 centimeters above the waist.
+
+1) Signers, place your hands in your lap.
+
+2) Start the camera.
+
+3) Signer start making the hand sign when the video camera is started. Try to make your signs so your hands stay as close to your body as possible so they will stay inside the HHR video frame.
+
+4) Stop the camera when hand sign is complete.
+Position -
+Change the position of the camera if necessary for hand signs that are above the head or below the waist.
+
+Clothes -
+Signer should wear a solid dark shirt. The video above was a white shirt but we had to do extra work to make it look good. :-)
+
+Test Video -
+Please upload a test video using the &quot;STARTED videoing SIGNS&quot; form before you begin filming the lexicon so I can make suggestions. 
+Please send me an email if you have any problems or when you have uploaded the 1742 word form.
+
+Thank you!
+Bob Achgill
+HHReader3@gmail.com</hint>
+    </input>
+    <input ref="/HHR_ReadMeFirst_03/instructions4">
+      <label>Add your hands signs (part 3):</label>
+      <hint>Video equipment: This is a list of the equipment to video your hand signs. 
+ (Approx cost $300 without Android camera)
+
+1) Android cell phone, pad or tablet with HD video camera 
+
+2) Photo tent
+ 1 each - Lastolite LL LR4886 4-Feet Cubelite $130
+ http://www.amazon.com/gp/product/B0000AE6CK/ref=oh_details_o03_s00_i00?ie=UTF8&amp;psc=1
+
+3) lights with cords
+ 3 each - 40-60 watts (6,500K) day light fluorescent bulbs approx. $40 total
+ 3 each - 9 foot cord with light socket $30 total
+ 1 each - 15 foot cord with three plug recepticle $10
+
+4) Camera tripod
+ 1 each - Walmart - 42&quot; tripod Targus folds to 1 foot $ 15
+
+5) Bracket to attach phone/pad/tablet to tripod
+ [Phone]
+ 1 each - iStabilizer Mount Smartphone Tripod Mount $15
+ http://www.amazon.com/dp/B0056C4VRK/ref=pe_385040_30332200_pe_309540_26725410_item
+&lt;or&gt;
+ [Pad/Tablet]
+ 1 each - iStabilizer tabMount $28
+ http://www.amazon.com/dp/B00CTUOV7C/ref=pe_385040_30332200_pe_309540_26725410_item
+
+6) Black Curtain
+ 9 feet - Hancock's Fabric Ponte Knit W60 100% Poly Black 708545 sku $27 total
+
+7) Curtain rod
+ 1 each - Walmart - Mainstays Heavy Duty Curtain Rod 27&quot;-48&quot; B7004213281 PWLD2319-00003 $2
+ 1 each - Walmart - Mainstays Curtain Rod Extender adds 24&quot; B7004213280 PWLD2315-00007 $2
+
+8) Pony tail hair elastic band
+ 2 each $1</hint>
+    </input>
+    <input ref="/HHR_ReadMeFirst_03/multipleforms">
+      <label>When you finish!</label>
+      <hint>When you are finished go to the last page of the form and mark the form as &quot;finalized&quot; and save the form. Then go to the menu option &quot;Send Finalized Form&quot;. If you are at a Wi-Fi location the form and all the parts of the form will be uploaded to the His Hands Reader server. If your Wi-Fi is interrupted the upload will continue where it left off once the Wi-Fi connection is resumed. Write me to let me know you have sent the completed form and I will let you know if I have any questions
+
+Thank you!
+Bob Achgill
+HHReader3@gmail.com</hint>
+    </input>
+    <input ref="/HHR_ReadMeFirst_03/startedlanguage">
+      <label>Ready to Start?</label>
+      <hint>Please use the form titled ...
+&quot;STARTED Translation WORDS&quot; 
+or 
+&quot;STARTED videoing SIGNS&quot; 
+to tell us and everyone else that you have chosen to begin work so that others will not duplicate effort.</hint>
+    </input>
+  </h:body>
+</h:html>
